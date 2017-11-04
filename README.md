@@ -1,6 +1,6 @@
 # cfw_dev-setup_4rpi
 
-Sets up an App development environment for the fischertechnik TXT community firmware on raspbian
+Sets up an App development environment for the fischertechnik TXT community firmware on raspbian stretch.
 
 The most common way to create apps for the [Fischertechnik Robotics TXT Controller community firmware](http://cfw.ftcommunity.de/) is to use the Python3 language and the TXT-specific Py3Qt4 based TouchUI Python module.
 
