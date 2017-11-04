@@ -15,5 +15,11 @@ The installed software is:
 - python3 and python3qt4 including its dependencies (should already be available on a regular stretch install)
 - TouchUI and TouchAuxiliary python modules as a base framework for the apps
 - ftrobopy module to address the TXT I/O hardware
-- txrobopy module to address ft TX controllers attached to the TXT
 - libroboint python module to address the whole RoboInterface family of fischertechnik robotics controllers
+
+# This is work in progress, basically just started.
+# currently, openCV does not work as expected since there are no python3.5 bindings
+# other issues may arise any time and at any reason
+
+## use at own risk...
+...and have fun :-)
