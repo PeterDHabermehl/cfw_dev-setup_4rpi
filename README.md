@@ -17,6 +17,42 @@ The installed software is:
 - ftrobopy module to address the TXT I/O hardware
 - libroboint python module to address the whole RoboInterface family of fischertechnik robotics controllers
 
+# howto...
+## Step 1:
+Get a SD card of at least 16GB. Install raspberry stretch on it and set up your RPi with this card as you would usually do. You might also try to run this install script on your existing stretch install, but, alas, do so on your own risk...
+
+## Step 2:
+Open up a terminal window, cd to your home directory (assuming you use the standard user name "pi"), get the install script, make it executeable and ... let it run!
+This would be:
+
+ cd ~
+ wget https://github.com/PeterDHabermehl/cfw_dev-setup_4rpi/raw/master/cfw_dev-setup.sh
+ chmod a+x ./cfw_dev-setup.sh
+ ./cfw_dev-setup.sh
+
+Drink a coffee...
+
+## Step 3:
+If you intend to use openCV, you have to build it yourself. For your convenience, I put the build instructions I found at
+https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
+into another nifty littel sh script. So basically
+
+ wget https://github.com/PeterDHabermehl/cfw_dev-setup_4rpi/raw/master/build_openCV3.sh
+ chmod a+x ./build_openCV3.sh
+ ./build_openCV3.sh
+
+would download all dependencies and build and install openCV3 to your RPi. After launching the script...
+
+Drink much more coffee...
+
+Build might take some (between 1.5 and 5 hours!)
+
+## You're done
+Find test.py in the folder ~/cfw-dev/apps/ 
+Start it from the shell, it is supposed to open an empty window in cfw style.
+You now can start writing your own apps according to the [cfw documentation](http://cfw.ftcommunity.de/) Section Programming/Python, or you can download and unpack existing cfw apps and launch them from the shell...
+
+
 # This is work in progress, basically just started.
 # currently, openCV does not work as expected since there are no python3.5 bindings
 # other issues may arise any time and at any reason
