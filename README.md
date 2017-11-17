@@ -39,7 +39,7 @@ Drink a coffee...
 ## Step 3:
 If you intend to use openCV, you have to build it yourself. For your convenience, I put the build instructions I found at
 https://www.pyimagesearch.com/2017/09/04/raspbian-stretch-install-opencv-3-python-on-your-raspberry-pi/
-into another nifty littel sh script. So basically
+into another nifty little sh script. So basically
 
 - wget https://github.com/PeterDHabermehl/cfw_dev-setup_4rpi/raw/master/build_openCV3.sh
 - chmod a+x ./build_openCV3.sh
@@ -55,7 +55,8 @@ Build might take some (between 1.5 and 5 hours!)
 Find test.py in the folder ~/cfw-dev/apps/ 
 Start it from the shell, it is supposed to open an empty window in cfw style.
 ![test.py](https://github.com/PeterDHabermehl/cfw_dev-setup_4rpi/raw/master/img/test.py.png)
-You now can start writing your own apps according to the [cfw documentation](http://cfw.ftcommunity.de/) Section Programming/Python, or you can download and unpack existing cfw apps and launch them from the shell...
+
+You now can start writing your own apps according to the [cfw documentation](http://cfw.ftcommunity.de/), Section Programming/Python, or you can download and unpack existing cfw apps and launch them from the shell...
 
 
 # This is work in progress, basically just started.
