@@ -18,6 +18,9 @@ echo ""
 echo "to set up a ft TXT cfw compatible development environment on your RPi."
 echo ""
 
+cd ~
+mkdir cfw-dev
+
 # update the sw repos
 sudo apt-get update
 
@@ -97,7 +100,6 @@ sudo rm -f libroboint-inst.sh
 
 # finalize
 cd ~
-mkdir cfw-dev
 mv ftc cfw-dev/
 rm -f github-downloader.sh
 cd cfw-dev
