@@ -86,7 +86,7 @@ sudo wget -N $GITROOT/etc/udev/rules.d/60-i2c-tools.rules
 echo "---------------------"
 echo "Download ftrobopy and libroboint"
 echo ""
-cd ftc
+cd ~/cfw-dev/ftc
 wget -N https://raw.githubusercontent.com/ftrobopy/ftrobopy/master/ftrobopy.py
 
 # install libroboint
