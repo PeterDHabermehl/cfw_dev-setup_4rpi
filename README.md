@@ -60,7 +60,7 @@ You now can start writing your own apps according to the [cfw documentation](htt
 
 
 # This is work in progress, basically just started.
-# currently, openCV does not work as expected since there are no python3.5 bindings
+# currently, openCV only works if you build it yourself as described above. Have in mind that the script above installs openCV3.3 whereas the cfw on TXT comes with openCV2. So if you intend to create apps for the TXT, you have to use only openCV2 compatible code.
 # other issues may arise any time and at any reason
 
 ## use at own risk...
