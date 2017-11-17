@@ -53,9 +53,9 @@ sudo rm -f hcitool-xlescan.tgz
 # we might build our own package to get rid of these dependencies,
 # especially gtk
 sudo apt-get -y install libjasper1 libgtk2.0-0 libavcodec56 libavformat56 libswscale3
-sudo wget -N https://github.com/jabelone/OpenCV-for-Pi/raw/master/latest-OpenCV.deb
-sudo dpkg -i latest-OpenCV.deb
-sudo rm -f latest-OpenCV.deb
+#sudo wget -N https://github.com/jabelone/OpenCV-for-Pi/raw/master/latest-OpenCV.deb
+#sudo dpkg -i latest-OpenCV.deb
+#sudo rm -f latest-OpenCV.deb
 
 sudo apt-get -y install --no-install-recommends libzbar0 python3-pil 
 sudo apt-get -y install --no-install-recommends libzbar-dev
@@ -111,3 +111,10 @@ wget http://cfw.ftcommunity.de/ftcommunity-TXT/media/examples/python/tutorial-1/
 chmod +x test.py
 
 sudo touch /etc/ft-cfw-dev.txt
+echo "========================================================"
+echo "= Installation finished                                ="
+echo "=   - if you want to use openCV, follow the guide on   ="
+echo "=     how to install it                                ="
+echo "=   - run test.py located in /home/pi/cfw-dev/apps to  ="
+echo "=     experience your first cfw app on your RPi        ="
+echo "========================================================"
