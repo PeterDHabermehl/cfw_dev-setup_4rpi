@@ -93,6 +93,7 @@ cd ~/cfw-dev/ftc
 wget -N https://raw.githubusercontent.com/ftrobopy/ftrobopy/master/ftrobopy.py
 
 # install libroboint
+cd ~
 sudo wget -N $LOCALGIT/libroboint-inst.sh
 sudo chmod a+x libroboint-inst.sh
 sudo ./libroboint-inst.sh
