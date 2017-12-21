@@ -74,6 +74,17 @@ chmod a+x github-downloader.sh
 ./github-downloader.sh https://github.com/ftCommunity/ftcommunity-TXT/tree/master/board/fischertechnik/TXT/rootfs/opt/ftc
 rm -fr ftc/apps ftc/plugins ftc/launcher*.*
 
+# adjust font sizes/styles from qtembedded to x11
+STYLE=/opt/ftc/themes/default/style.qss
+# remove all "bold"
+sed -i 's/^\(\s*font:\)\s*bold/\1/' $STYLE
+# and scale some fonts
+for i in 24:23 28:24 32:24; do
+    from=`echo $i | cut -d':' -f1`
+    to=`echo $i | cut -d':' -f2`
+    sed -i "s/^\(\s*font:\)\s*${from}px/\1 ${to}px/" $STYLE
+done
+
 # set firmware version
 cd /etc
 sudo wget -N $GITROOT/etc/fw-ver.txt
