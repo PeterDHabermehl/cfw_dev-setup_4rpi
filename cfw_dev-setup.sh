@@ -38,7 +38,7 @@ sudo apt-get -y install i2c-tools python3-smbus lighttpd git subversion ntpdate 
 # some additionl python stuff
 sudo pip3 install semantic_version
 sudo pip3 install websockets
-sudo pip3 install pyserial
+sudo pip3 install --upgrade pyserial
 
 # usbmount config
 cd /etc/usbmount
