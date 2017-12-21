@@ -87,10 +87,11 @@ sudo wget -N $GITROOT/etc/udev/rules.d/60-i2c-tools.rules
 
 # HW access
 echo "---------------------"
-echo "Download ftrobopy and libroboint"
+echo "Download ftrobopy, ftduino_direct and libroboint"
 echo ""
 cd ~/cfw-dev/ftc
 wget -N https://raw.githubusercontent.com/ftrobopy/ftrobopy/master/ftrobopy.py
+wget -N https://github.com/ftCommunity/ftcommunity-TXT/raw/master/board/fischertechnik/TXT/rootfs/opt/ftc/ftduino_direct.py
 
 # install libroboint
 cd ~
