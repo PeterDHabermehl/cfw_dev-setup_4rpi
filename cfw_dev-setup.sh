@@ -12,7 +12,7 @@ SVNROOT=$SVNBASE"board/fischertechnik/TXT/rootfs"
 LOCALGIT="https://github.com/harbaum/tx-pi/raw/master/setup"
 
 FTDDIRECT="ftduino_direct-1.0.5"
-STYLE=~/cfw-dev/ftc/default/style.qss
+STYLE=~/cfw-dev/ftc/themes/default/style.qss
 #
 
 echo "cfw_dev-setup.sh"
