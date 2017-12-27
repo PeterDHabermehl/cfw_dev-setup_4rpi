@@ -12,6 +12,7 @@ SVNROOT=$SVNBASE"board/fischertechnik/TXT/rootfs"
 LOCALGIT="https://github.com/harbaum/tx-pi/raw/master/setup"
 
 FTDDIRECT="ftduino_direct-1.0.5"
+STYLE=~/cfw-dev/ftc/default/style.qss
 #
 
 echo "cfw_dev-setup.sh"
@@ -67,7 +68,7 @@ sudo apt-get -y install --no-install-recommends libzbar-dev
 sudo pip3 install zbarlight
 
 # cfw TouchUI
-cd ~
+cd ~/cfw-dev/ftc
 echo "--------------------"
 echo "Download and install TouchUI"
 echo ""
@@ -77,7 +78,6 @@ chmod a+x github-downloader.sh
 rm -fr ftc/apps ftc/plugins ftc/launcher*.*
 
 # adjust font sizes/styles from qtembedded to x11
-STYLE=/opt/ftc/themes/default/style.qss
 # remove all "bold"
 sed -i 's/^\(\s*font:\)\s*bold/\1/' $STYLE
 # and scale some fonts
