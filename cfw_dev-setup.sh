@@ -10,6 +10,8 @@ GITROOT=$GITBASE"board/fischertechnik/TXT/rootfs"
 SVNBASE="https://github.com/ftCommunity/ftcommunity-TXT.git/trunk/"
 SVNROOT=$SVNBASE"board/fischertechnik/TXT/rootfs"
 LOCALGIT="https://github.com/harbaum/tx-pi/raw/master/setup"
+
+FTDDIRECT="ftduino_direct-1.0.5"
 #
 
 echo "cfw_dev-setup.sh"
@@ -102,7 +104,13 @@ echo "Download ftrobopy, ftduino_direct and libroboint"
 echo ""
 cd ~/cfw-dev/ftc
 wget -N https://raw.githubusercontent.com/ftrobopy/ftrobopy/master/ftrobopy.py
-wget -N https://github.com/ftCommunity/ftcommunity-TXT/raw/master/board/fischertechnik/TXT/rootfs/opt/ftc/ftduino_direct.py
+
+wget -N https://github.com/PeterDHabermehl/ftduino_direct/raw/master/$FTDDIRECT.tar.gz
+tar -xzvf $FTDDIRECT.tar.gz 
+cd $FTDDIRECT
+sudo python3 ./setup.py install
+cd ..
+sudo rm -fr $FTDDIRECT $FTDDIRECT.tar.gz
 
 # install libroboint
 cd ~
