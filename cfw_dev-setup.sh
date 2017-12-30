@@ -26,6 +26,7 @@ mkdir cfw-dev
 
 # update the sw repos
 sudo apt-get update
+sudo apt-get upgrade
 
 # make sure python3 and py3qt4 are available
 echo "Check for python3 and pyqt4 and install , if necessary"
