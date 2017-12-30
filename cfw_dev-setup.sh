@@ -111,6 +111,7 @@ cd $FTDDIRECT
 sudo python3 ./setup.py install
 cd ..
 sudo rm -fr $FTDDIRECT $FTDDIRECT.tar.gz
+sudo rm -fr /opt/ftc/ftduino_direct.py
 
 # install libroboint
 cd ~
