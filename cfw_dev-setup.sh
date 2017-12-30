@@ -43,6 +43,8 @@ sudo apt-get -y install i2c-tools python3-smbus lighttpd git subversion ntpdate 
 sudo pip3 install semantic_version
 sudo pip3 install websockets
 sudo pip3 install --upgrade pyserial
+sudo apt-get install -y python3-rpi.gpio
+sudo apt-get install -y python-rpi.gpio
 
 # usbmount config
 cd /etc/usbmount
