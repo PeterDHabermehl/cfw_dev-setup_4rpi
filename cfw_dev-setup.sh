@@ -11,7 +11,7 @@ SVNBASE="https://github.com/ftCommunity/ftcommunity-TXT.git/trunk/"
 SVNROOT=$SVNBASE"board/fischertechnik/TXT/rootfs"
 LOCALGIT="https://github.com/harbaum/tx-pi/raw/master/setup"
 
-FTDDIRECT="ftduino_direct-1.0.7"
+FTDDIRECT="ftduino_direct-1.0.8"
 STYLE=~/cfw-dev/ftc/themes/default/style.qss
 #
 
